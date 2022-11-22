@@ -55,49 +55,11 @@
 //{
 //    Console.WriteLine("else not in a same line");
 //}
-
-public static List<int> GetSamllests(List<int> list, int count)
-
-{
-
-    var smallests = new List<int>();
-    while (smallests.Count < count)
-    {
-        var min = GetSamllest(list);
-        smallests.Add(min);
-        list.Remove(min);
-    }
-
-    return smallests;
-}
+ 
 
 
 
-public static  int GetSamllest(List<int> list)
-
-{
-    var min = list[0];
-    for (int i = 1; i < list.Count; i++)
-    {
-        if (list[i] == min)
-        {
-            min = list[i];
-
-        }
-
-        return min;
-    }
-}
-
-
-var numbers = new List<int>() { 1, 2, 3, 4, 5, 6 };
-
-var smallest = GetSamllests(numbers, 3);
-
-foreach (var number in smallest)
-{
-    Console.WriteLine(number);
-}
+  
 
 
 
